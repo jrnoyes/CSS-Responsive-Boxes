@@ -1,3 +1,57 @@
-body {
-  background: blanchedalmond;
+* {
+  box-sizing: 2px solid blue;
 }
+
+body {
+  background: lightblue;
+  margin: 10px;
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+ }
+
+header, footer {
+  flex-grow: 1;
+}
+
+main {
+  flex-grow: 3;
+}
+
+header {
+  background: yellow;
+  box-sizing: border-box;
+  border: solid 10px blue;
+  width: 100%;
+}
+
+main {
+  background: yellow;
+  box-sizing: border-box;
+  border: solid 10px blue;
+  }
+
+footer {
+  background: yellow;
+  box-sizing: border-box;
+  border: solid 10px blue; 
+}
+
+main, header, footer {
+  margin: 1em;
+}
+
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+
